@@ -4,7 +4,7 @@ import { ProfileAvatar } from "@/components/ProfileAvatar";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Juliana Giralodo | Portafolio QA" },
+      { title: "Juliana Giraldo | Portafolio QA" },
       {
         name: "description",
         content:
