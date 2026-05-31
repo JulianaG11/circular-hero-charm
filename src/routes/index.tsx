@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Portafolio de Juliana Giralodo con proyectos de QA, reporte de bugs y herramientas clave para testing y aseguramiento de calidad.",
+          "Portafolio de Juliana Giraldo con proyectos de QA, reporte de bugs y herramientas clave para testing y aseguramiento de calidad.",
       },
     ],
   }),
