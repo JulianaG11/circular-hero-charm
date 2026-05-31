@@ -54,7 +54,7 @@ function Index() {
               Portafolio QA
             </p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-foreground sm:text-6xl">
-              Juliana Giralodo
+              Juliana Giraldo
             </h1>
             <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground lg:max-w-xl">
               Profesional orientada al aseguramiento de calidad, enfocada en pruebas
