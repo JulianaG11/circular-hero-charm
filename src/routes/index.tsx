@@ -4,17 +4,17 @@ import { ProfileAvatar } from "@/components/ProfileAvatar";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Juliana Giralodo | Portafolio QA" },
+      { title: "Juliana Giraldo | Portafolio QA" },
       {
         name: "description",
         content:
-          "Portafolio de Juliana Giralodo con experiencia en QA, proyectos de pruebas y herramientas como Jira, Postman, Figma, Python, Android Studio y Selenium.",
+          "Portafolio de Juliana Giraldo con experiencia en QA, proyectos de pruebas y herramientas como Jira, Postman, Figma, Python, Android Studio y Selenium.",
       },
-      { property: "og:title", content: "Juliana Giralodo | Portafolio QA" },
+      { property: "og:title", content: "Juliana Giraldo | Portafolio QA" },
       {
         property: "og:description",
         content:
-          "Portafolio de Juliana Giralodo con proyectos de QA, reporte de bugs y herramientas clave para testing y aseguramiento de calidad.",
+          "Portafolio de Juliana Giraldo con proyectos de QA, reporte de bugs y herramientas clave para testing y aseguramiento de calidad.",
       },
     ],
   }),
@@ -54,7 +54,7 @@ function Index() {
               Portafolio QA
             </p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-foreground sm:text-6xl">
-              Juliana Giralodo
+              Juliana Giraldo
             </h1>
             <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground lg:max-w-xl">
               Profesional orientada al aseguramiento de calidad, enfocada en pruebas
