@@ -10,7 +10,7 @@ export const Route = createFileRoute("/")({
         content:
           "Portafolio de Juliana Giraldo con experiencia en QA, proyectos de pruebas y herramientas como Jira, Postman, Figma, Python, Android Studio y Selenium.",
       },
-      { property: "og:title", content: "Juliana Giralodo | Portafolio QA" },
+      { property: "og:title", content: "Juliana Giraldo | Portafolio QA" },
       {
         property: "og:description",
         content:
