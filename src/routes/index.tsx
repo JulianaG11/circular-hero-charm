@@ -8,7 +8,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Portafolio de Juliana Giralodo con experiencia en QA, proyectos de pruebas y herramientas como Jira, Postman, Figma, Python, Android Studio y Selenium.",
+          "Portafolio de Juliana Giraldo con experiencia en QA, proyectos de pruebas y herramientas como Jira, Postman, Figma, Python, Android Studio y Selenium.",
       },
       { property: "og:title", content: "Juliana Giralodo | Portafolio QA" },
       {
