@@ -21,7 +21,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const skills = ["Jira", "Postman", "Figma", "Python", "Android Studio", "Selenium"];
+const skills = ["Jira", "Postman", "Python", "Selenium", "SQL", "Figma", "Android Studio"];
 
 const projects = [
   {
