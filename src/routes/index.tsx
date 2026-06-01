@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ProfileAvatar } from "@/components/ProfileAvatar";
+import { CvDownload } from "@/components/CvDownload";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -68,26 +69,22 @@ function Index() {
               sector inmobiliario que transformé con éxito hacia el aseguramiento de la
               calidad de software.
             </p>
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
-              <a
-                href="./CV_Juliana_Giraldo.pdf"
-                download
-                className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-md transition-colors hover:bg-primary/90"
-              >
-                Descargar CV
-              </a>
-              <a
-                href="#proyectos"
-                className="inline-flex items-center justify-center rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold text-card-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
-              >
-                Ver proyectos
-              </a>
-              <a
-                href="#sobre-mi"
-                className="inline-flex items-center justify-center rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold text-card-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
-              >
-                Sobre mí
-              </a>
+            <div className="mt-8">
+              <CvDownload />
+              <div className="mt-3 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
+                <a
+                  href="#proyectos"
+                  className="inline-flex items-center justify-center rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold text-card-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                >
+                  Ver proyectos
+                </a>
+                <a
+                  href="#sobre-mi"
+                  className="inline-flex items-center justify-center rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold text-card-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                >
+                  Sobre mí
+                </a>
+              </div>
             </div>
           </div>
 
