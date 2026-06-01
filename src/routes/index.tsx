@@ -26,14 +26,28 @@ const skills = ["Jira", "Postman", "Python", "Selenium", "SQL", "Figma", "Androi
 
 const projects = [
   {
-    title: "Diseño de casos de prueba",
+    title: "Automatización de Pruebas Web (E-Commerce)",
     description:
-      "Planificación y documentación de escenarios funcionales, validación de flujos críticos y cobertura de pruebas enfocada en calidad y trazabilidad.",
+      "Desarrollo de un framework de automatización de pruebas de extremo a extremo (E2E) para una plataforma de comercio electrónico. Automatización de flujos críticos como el registro de usuarios, búsqueda de productos y el ciclo completo de compras (carrito de compras).",
+    tags: ["Python", "Selenium WebDriver", "PyTest", "HTML/CSS"],
+    link: "https://github.com/JulianaG11/circular-hero-charm",
+    linkLabel: "Ver Repositorio",
   },
   {
-    title: "Reporte de Bugas",
+    title: "Pruebas de API y Automatización con Postman",
     description:
-      "Registro claro de incidencias, reproducción de errores, evidencia visual y seguimiento estructurado para facilitar la corrección por parte del equipo.",
+      "Diseño y ejecución de pruebas funcionales y de integración sobre APIs REST. Creación de colecciones de pruebas automatizadas en Postman, validación de códigos de estado HTTP, tiempos de respuesta, estructuras JSON y manejo de variables de entorno para pruebas de regresión.",
+    tags: ["Postman", "JavaScript (Newman)", "REST APIs", "JSON"],
+    link: "https://github.com/JulianaG11",
+    linkLabel: "Ver Evidencia",
+  },
+  {
+    title: "Pruebas Estructurales y Gestión de Defectos en Jira",
+    description:
+      "Análisis de requerimientos de software para el diseño exhaustivo de matrices de casos de prueba (funcionales, humo y regresión). Gestión del ciclo de vida completo de defectos en Jira, priorización de bugs mediante criticidad y documentación de evidencias técnicas detalladas.",
+    tags: ["Jira", "Confluence", "Metodologías Ágiles (Scrum)", "Pruebas Manuales"],
+    link: "https://github.com/JulianaG11",
+    linkLabel: "Ver Evidencia",
   },
 ];
 
