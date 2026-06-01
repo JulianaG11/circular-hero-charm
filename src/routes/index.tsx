@@ -147,14 +147,36 @@ function Index() {
             Experiencia destacada en pruebas y documentación de errores
           </h2>
 
-          <div className="mt-8 grid gap-4 lg:grid-cols-2">
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {projects.map((project) => (
               <article
                 key={project.title}
-                className="rounded-lg border border-border bg-card p-6 shadow-sm"
+                className="flex flex-col rounded-xl border border-border bg-card p-6 shadow-sm transition-colors hover:border-primary/20"
               >
-                <h3 className="text-xl font-semibold text-card-foreground">{project.title}</h3>
-                <p className="mt-3 leading-7 text-muted-foreground">{project.description}</p>
+                <h3 className="text-lg font-semibold leading-snug text-card-foreground">
+                  {project.title}
+                </h3>
+                <p className="mt-3 flex-1 text-sm leading-6 text-muted-foreground">
+                  {project.description}
+                </p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-flex items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+                >
+                  {project.linkLabel}
+                </a>
               </article>
             ))}
           </div>
