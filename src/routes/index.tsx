@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ProfileAvatar } from "@/components/ProfileAvatar";
+import { CvDownload } from "@/components/CvDownload";
 
 export const Route = createFileRoute("/")({
   head: () => ({
