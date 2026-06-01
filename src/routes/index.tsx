@@ -108,9 +108,9 @@ function Index() {
             </h2>
             <p className="mt-5 max-w-2xl text-pretty leading-7 text-muted-foreground">
               Me especializo en identificar riesgos, estructurar pruebas y documentar
-              hallazgos de forma precisa para ayudar a los equipos a entregar productos
-              más estables, usables y confiables. Trabajo con herramientas de validación,
-              seguimiento y automatización que fortalecen cada etapa del proceso de calidad.
+              hallazgos de forma precisa. Cuento con una sólida trayectoria de 5 años en el
+              sector inmobiliario que transformé con éxito hacia el aseguramiento de la
+              calidad de software.
             </p>
           </div>
 
