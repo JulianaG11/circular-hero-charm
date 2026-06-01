@@ -21,7 +21,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const skills = ["Jira", "Postman", "Figma", "Python", "Android Studio", "Selenium"];
+const skills = ["Jira", "Postman", "Python", "Selenium", "SQL", "Figma", "Android Studio"];
 
 const projects = [
   {
@@ -53,18 +53,32 @@ function Index() {
             <p className="text-sm font-medium uppercase tracking-[0.25em] text-muted-foreground">
               Portafolio QA
             </p>
+            <p className="mt-4 text-pretty text-lg font-semibold italic text-primary sm:text-xl">
+              "Asegurando la excelencia, un detalle a la vez."
+            </p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-foreground sm:text-6xl">
               Juliana Giraldo
             </h1>
+            <p className="mt-3 text-base font-medium uppercase tracking-[0.2em] text-muted-foreground">
+              Junior QA Tester
+            </p>
             <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground lg:max-w-xl">
-              Profesional orientada al aseguramiento de calidad, enfocada en pruebas
-              funcionales, documentación clara de hallazgos y mejora continua de la
-              experiencia del usuario en productos digitales.
+              Me especializo en identificar riesgos, estructurar pruebas y documentar
+              hallazgos de forma precisa. Cuento con una sólida trayectoria de 5 años en el
+              sector inmobiliario que transformé con éxito hacia el aseguramiento de la
+              calidad de software.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
               <a
+                href="./CV_Juliana_Giraldo.pdf"
+                download
+                className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-md transition-colors hover:bg-primary/90"
+              >
+                Descargar CV
+              </a>
+              <a
                 href="#proyectos"
-                className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
+                className="inline-flex items-center justify-center rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold text-card-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
               >
                 Ver proyectos
               </a>
@@ -94,9 +108,9 @@ function Index() {
             </h2>
             <p className="mt-5 max-w-2xl text-pretty leading-7 text-muted-foreground">
               Me especializo en identificar riesgos, estructurar pruebas y documentar
-              hallazgos de forma precisa para ayudar a los equipos a entregar productos
-              más estables, usables y confiables. Trabajo con herramientas de validación,
-              seguimiento y automatización que fortalecen cada etapa del proceso de calidad.
+              hallazgos de forma precisa. Cuento con una sólida trayectoria de 5 años en el
+              sector inmobiliario que transformé con éxito hacia el aseguramiento de la
+              calidad de software.
             </p>
           </div>
 
