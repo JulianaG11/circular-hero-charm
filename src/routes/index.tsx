@@ -183,6 +183,65 @@ function Index() {
           </div>
         </div>
       </section>
+
+      <section id="contacto" className="relative z-10 border-t border-border/70">
+        <div className="mx-auto w-full max-w-6xl px-6 py-16 sm:px-8">
+          <p className="text-center text-sm font-medium uppercase tracking-[0.25em] text-muted-foreground">
+            Contacto
+          </p>
+          <h2 className="mt-3 text-center text-3xl font-semibold tracking-tight text-foreground">
+            ¡Hablemos!
+          </h2>
+
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Pereira%2C+Risaralda%2C+Colombia"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 rounded-xl border border-border bg-card p-4 shadow-sm transition-colors hover:border-primary/20 hover:bg-accent"
+            >
+              <MapPin className="h-5 w-5 shrink-0 text-primary" />
+              <span className="text-sm font-medium text-card-foreground">
+                Pereira, Risaralda, Colombia
+              </span>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/juliana-giraldo-qa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 rounded-xl border border-border bg-card p-4 shadow-sm transition-colors hover:border-primary/20 hover:bg-accent"
+            >
+              <Linkedin className="h-5 w-5 shrink-0 text-primary" />
+              <span className="text-sm font-medium text-card-foreground">LinkedIn</span>
+            </a>
+
+            <a
+              href="https://github.com/JulianaG11"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 rounded-xl border border-border bg-card p-4 shadow-sm transition-colors hover:border-primary/20 hover:bg-accent"
+            >
+              <Github className="h-5 w-5 shrink-0 text-primary" />
+              <span className="text-sm font-medium text-card-foreground">GitHub</span>
+            </a>
+
+            <a
+              href="mailto:julianagiraldoa11@gmail.com"
+              className="flex items-center gap-3 rounded-xl border border-border bg-card p-4 shadow-sm transition-colors hover:border-primary/20 hover:bg-accent"
+            >
+              <Mail className="h-5 w-5 shrink-0 text-primary" />
+              <span className="text-sm font-medium text-card-foreground">Correo electrónico</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer className="relative z-10 border-t border-border/70 bg-background/90 py-6 text-center">
+        <p className="text-sm text-muted-foreground">
+          © 2026 Juliana Giraldo | Junior QA Tester
+        </p>
+      </footer>
     </main>
   );
 }
