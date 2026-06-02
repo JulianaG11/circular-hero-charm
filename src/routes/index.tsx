@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ProfileAvatar } from "@/components/ProfileAvatar";
 import { CvDownload } from "@/components/CvDownload";
+import { MapPin, Linkedin, Github, Mail } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
