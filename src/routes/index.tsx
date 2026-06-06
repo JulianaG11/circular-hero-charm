@@ -23,7 +23,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const skills = ["Jira", "Postman", "Python", "Selenium", "SQL", "Figma", "Android Studio"];
+const skills = ["Jira", "Postman", "Python", "Selenium", "SQL", "Figma", "Android Studio", "Metodologías ágiles (Scram)"];
 
 const projects = [
   {
