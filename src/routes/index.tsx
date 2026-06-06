@@ -159,36 +159,49 @@ function Index() {
             Experiencia destacada en pruebas y documentación de errores
           </h2>
 
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 flex flex-col gap-6">
             {projects.map((project) => (
               <article
                 key={project.title}
-                className="flex flex-col rounded-xl border border-border bg-card p-6 shadow-sm transition-colors hover:border-primary/20"
+                className="grid gap-6 rounded-xl border border-border bg-card p-6 shadow-sm transition-colors hover:border-primary/20 sm:grid-cols-[minmax(0,1fr)_minmax(0,14rem)] sm:items-center"
               >
-                <h3 className="text-lg font-semibold leading-snug text-card-foreground">
-                  {project.title}
-                </h3>
-                <p className="mt-3 flex-1 text-sm leading-6 text-muted-foreground">
-                  {project.description}
-                </p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                <div className="flex flex-col">
+                  <h3 className="text-lg font-semibold leading-snug text-card-foreground">
+                    {project.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-6 text-muted-foreground">
+                    {project.description}
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {project.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-5 inline-flex w-fit items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+                  >
+                    {project.linkLabel}
+                  </a>
                 </div>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-5 inline-flex items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
-                >
-                  {project.linkLabel}
-                </a>
+
+                <div className="order-first overflow-hidden rounded-lg border border-border/70 bg-background/60 sm:order-none">
+                  <img
+                    src={project.image}
+                    alt={project.imageAlt}
+                    loading="lazy"
+                    width={640}
+                    height={640}
+                    className="h-44 w-full object-cover sm:h-full"
+                  />
+                </div>
               </article>
             ))}
           </div>
