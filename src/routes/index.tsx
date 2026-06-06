@@ -2,6 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ProfileAvatar } from "@/components/ProfileAvatar";
 import { CvDownload } from "@/components/CvDownload";
 import { MapPin, Linkedin, Github, Mail } from "lucide-react";
+import ecommerceImg from "@/assets/project-ecommerce.jpg";
+import apiImg from "@/assets/project-api.jpg";
+import kanbanImg from "@/assets/project-kanban.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -31,6 +34,8 @@ const projects = [
     description:
       "Desarrollo de un framework de automatización de pruebas de extremo a extremo (E2E) para una plataforma de comercio electrónico. Automatización de flujos críticos como el registro de usuarios, búsqueda de productos y el ciclo completo de compras (carrito de compras).",
     tags: ["Python", "Selenium WebDriver", "PyTest", "HTML/CSS"],
+    image: ecommerceImg,
+    imageAlt: "Ilustración de un carrito de compras digital",
     link: "https://github.com/JulianaG11/circular-hero-charm",
     linkLabel: "Ver Repositorio",
   },
@@ -39,6 +44,8 @@ const projects = [
     description:
       "Diseño y ejecución de pruebas funcionales y de integración sobre APIs REST. Creación de colecciones de pruebas automatizadas en Postman, validación de códigos de estado HTTP, tiempos de respuesta, estructuras JSON y manejo de variables de entorno para pruebas de regresión.",
     tags: ["Postman", "JavaScript (Newman)", "REST APIs", "JSON"],
+    image: apiImg,
+    imageAlt: "Ilustración de conexiones de API y red",
     link: "https://github.com/JulianaG11",
     linkLabel: "Ver Evidencia",
   },
@@ -47,6 +54,8 @@ const projects = [
     description:
       "Análisis de requerimientos de software para el diseño exhaustivo de matrices de casos de prueba (funcionales, humo y regresión). Gestión del ciclo de vida completo de defectos en Jira, priorización de bugs mediante criticidad y documentación de evidencias técnicas detalladas.",
     tags: ["Jira", "Confluence", "Metodologías Ágiles (Scrum)", "Pruebas Manuales"],
+    image: kanbanImg,
+    imageAlt: "Ilustración de un tablero Kanban para gestión ágil",
     link: "https://github.com/JulianaG11",
     linkLabel: "Ver Evidencia",
   },
@@ -150,36 +159,49 @@ function Index() {
             Experiencia destacada en pruebas y documentación de errores
           </h2>
 
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 flex flex-col gap-6">
             {projects.map((project) => (
               <article
                 key={project.title}
-                className="flex flex-col rounded-xl border border-border bg-card p-6 shadow-sm transition-colors hover:border-primary/20"
+                className="grid gap-6 rounded-xl border border-border bg-card p-6 shadow-sm transition-colors hover:border-primary/20 sm:grid-cols-[minmax(0,1fr)_minmax(0,14rem)] sm:items-center"
               >
-                <h3 className="text-lg font-semibold leading-snug text-card-foreground">
-                  {project.title}
-                </h3>
-                <p className="mt-3 flex-1 text-sm leading-6 text-muted-foreground">
-                  {project.description}
-                </p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                <div className="flex flex-col">
+                  <h3 className="text-lg font-semibold leading-snug text-card-foreground">
+                    {project.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-6 text-muted-foreground">
+                    {project.description}
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {project.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-5 inline-flex w-fit items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+                  >
+                    {project.linkLabel}
+                  </a>
                 </div>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-5 inline-flex items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
-                >
-                  {project.linkLabel}
-                </a>
+
+                <div className="order-first overflow-hidden rounded-lg border border-border/70 bg-background/60 sm:order-none">
+                  <img
+                    src={project.image}
+                    alt={project.imageAlt}
+                    loading="lazy"
+                    width={640}
+                    height={640}
+                    className="h-44 w-full object-cover sm:h-full"
+                  />
+                </div>
               </article>
             ))}
           </div>
