@@ -119,10 +119,12 @@ function Index() {
               QA con foco en detalle, claridad y mejora continua
             </h2>
             <p className="mt-5 max-w-2xl text-pretty leading-7 text-muted-foreground">
-              Me especializo en identificar riesgos, estructurar pruebas y documentar
-              hallazgos de forma precisa. Cuento con una sólida trayectoria de 5 años en el
-              sector inmobiliario que transformé con éxito hacia el aseguramiento de la
-              calidad de software.
+              Como Junior QA Engineer, cuento con experiencia práctica en el ciclo de vida
+              de pruebas, abarcando desde el análisis de requisitos hasta el reporte de
+              bugs y la optimización de procesos. Domino el diseño de casos de prueba,
+              pruebas de API y automatización, con un sólido manejo de herramientas clave
+              como Postman, SQL, Figma, Python, Android Studio y JIRA, siempre con un
+              enfoque centrado en la calidad del producto y la experiencia del usuario.
             </p>
           </div>
 
