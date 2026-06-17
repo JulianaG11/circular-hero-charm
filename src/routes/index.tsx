@@ -5,6 +5,7 @@ import { MapPin, Linkedin, Github, Mail } from "lucide-react";
 import ecommerceImg from "@/assets/project-ecommerce.jpg";
 import apiImg from "@/assets/project-api.jpg";
 import kanbanImg from "@/assets/project-kanban.jpg";
+import edutechImg from "@/assets/project-edutech.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -58,6 +59,16 @@ const projects = [
     imageAlt: "Ilustración de un tablero Kanban para gestión ágil",
     link: "https://github.com/JulianaG11",
     linkLabel: "Ver Evidencia",
+  },
+  {
+    title: "Tecnología Educativa",
+    description:
+      "Proyecto enfocado en la aplicación de herramientas tecnológicas para el aprendizaje. Diseño y prueba de soluciones digitales orientadas a la educación, integrando plataformas interactivas, recursos multimedia y experiencias de usuario accesibles para potenciar el proceso de enseñanza-aprendizaje.",
+    tags: ["Tecnología Educativa", "E-Learning", "UX/UI", "Innovación"],
+    image: edutechImg,
+    imageAlt: "Ilustración de tecnología educativa con laptop, tablet y libros",
+    link: "https://github.com/JulianaG11",
+    linkLabel: "Ver Repositorio",
   },
 ];
 
