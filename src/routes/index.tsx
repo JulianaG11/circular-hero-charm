@@ -6,6 +6,7 @@ import ecommerceImg from "@/assets/project-ecommerce.jpg";
 import apiImg from "@/assets/project-api.jpg";
 import kanbanImg from "@/assets/project-kanban.jpg";
 import edutechImg from "@/assets/project-edutech.jpg";
+import apiPostmanImg from "@/assets/project-api-postman.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -67,6 +68,16 @@ const projects = [
     tags: ["Tecnología Educativa", "E-Learning", "UX/UI", "Innovación"],
     image: edutechImg,
     imageAlt: "Ilustración de tecnología educativa con laptop, tablet y libros",
+    link: "https://github.com/JulianaG11",
+    linkLabel: "Ver Repositorio",
+  },
+  {
+    title: "API_Testing_Postman",
+    description:
+      "Colecciones y automatización de pruebas de API REST utilizando Postman. Diseño de casos de prueba funcionales, validación de códigos de estado HTTP, tiempos de respuesta, estructuras JSON y variables de entorno para pruebas de regresión y smoke testing.",
+    tags: ["Postman", "REST API", "JSON", "Automatización"],
+    image: apiPostmanImg,
+    imageAlt: "Ilustración de testing de APIs con Postman",
     link: "https://github.com/JulianaG11",
     linkLabel: "Ver Repositorio",
   },
