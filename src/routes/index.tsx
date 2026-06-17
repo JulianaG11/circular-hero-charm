@@ -71,6 +71,16 @@ const projects = [
     link: "https://github.com/JulianaG11",
     linkLabel: "Ver Repositorio",
   },
+  {
+    title: "API_Testing_Postman",
+    description:
+      "Colecciones y automatización de pruebas de API REST utilizando Postman. Diseño de casos de prueba funcionales, validación de códigos de estado HTTP, tiempos de respuesta, estructuras JSON y variables de entorno para pruebas de regresión y smoke testing.",
+    tags: ["Postman", "REST API", "JSON", "Automatización"],
+    image: apiPostmanImg,
+    imageAlt: "Ilustración de testing de APIs con Postman",
+    link: "https://github.com/JulianaG11",
+    linkLabel: "Ver Repositorio",
+  },
 ];
 
 function Index() {
