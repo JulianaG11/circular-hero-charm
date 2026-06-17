@@ -5,6 +5,7 @@ import { MapPin, Linkedin, Github, Mail } from "lucide-react";
 import ecommerceImg from "@/assets/project-ecommerce.jpg";
 import apiImg from "@/assets/project-api.jpg";
 import kanbanImg from "@/assets/project-kanban.jpg";
+import edutechImg from "@/assets/project-edutech.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
