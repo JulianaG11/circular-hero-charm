@@ -6,6 +6,7 @@ import ecommerceImg from "@/assets/project-ecommerce.jpg";
 import apiImg from "@/assets/project-api.jpg";
 import kanbanImg from "@/assets/project-kanban.jpg";
 import edutechImg from "@/assets/project-edutech.jpg";
+import apiPostmanImg from "@/assets/project-api-postman.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
