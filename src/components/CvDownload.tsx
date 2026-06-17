@@ -1,7 +1,11 @@
 import { useState } from "react";
 import { Eye } from "lucide-react";
 
-const FILE_NAME = "CV_Juliana_Giraldo.pdf";
+const CV_PAGES = [
+  "/cv-preview/page-1.png",
+  "/cv-preview/page-2.png",
+  "/cv-preview/page-3.png",
+];
 
 export function CvDownload() {
   const [showPreview, setShowPreview] = useState(false);
@@ -18,11 +22,19 @@ export function CvDownload() {
       </button>
 
       {showPreview && (
-        <iframe
-          src={`/${FILE_NAME}`}
-          title="CV Juliana Giraldo"
-          className="h-[75vh] w-full rounded-lg border border-border bg-background"
-        />
+        <div className="max-h-[75vh] w-full overflow-y-auto rounded-lg border border-border bg-background p-3">
+          <div className="mx-auto flex max-w-3xl flex-col gap-3">
+            {CV_PAGES.map((page, index) => (
+              <img
+                key={page}
+                src={page}
+                alt={`CV Juliana Giraldo página ${index + 1}`}
+                className="h-auto w-full rounded-md"
+                loading="lazy"
+              />
+            ))}
+          </div>
+        </div>
       )}
     </div>
   );
